@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1 id="hello world">Hello world</h1>
+    <button id="my-button" type="button" name="button" onclick="clickButton()">
+      my-button
+    </button>
+    <button id="add-data" type="button" name="button" onclick="addData()">
+      add-data
+    </button>
+    <ul id="ul"></ul>
+    <textarea name="textarea" id="textarea" rows="8" cols="80"></textarea>
+  </body>
+  <script type="text/javascript">
+    var button = document.getElementById("my-button");
+    function clickButton() {
+      console.info("Hello world");
+      var headcontent = document.getElementById("hello world");
+      headcontent.innerHTML = "my Notebook";
+    }
+    function addData() {
+      var q4 = document.getElementById("add-data");
+      var q41 = document.getElementById("ul");
+      var ta = document.getElementById("textarea");
+      var str = ta.value;
+      var li = document.createElement("li");
+      li.innerHTML = str;
+      ul.appendChild(li);
+
+      // document.body.appendChild(h1);
+    }
+  </script>
+</html>
